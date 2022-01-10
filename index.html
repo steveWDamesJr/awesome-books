@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
 </head>
 
 <body>
@@ -15,16 +16,34 @@
     <h1 class="title">Awesome Books</h1>
   </header>
   <main>
-  <p>Lorem ipsum</p>
-  <p>Testeroo Testyy</p>
-  <button class="btn1" type="button">Remove</button>
-  <hr>
-  <p>Second book</p>
-  <p>Testeroo Testyy</p>
-  <button class="btn2" type="button">Remove</button>
-  <hr>
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+
+    <p>Lorem ipsum</p>
+    <p>Testeroo Testyy</p>
+    <button class="btn1" type="button">Remove</button>
+    <hr>
+    <p>Second book</p>
+    <p>Testeroo Testyy</p>
+    <button class="btn2" type="button">Remove</button>
+    <hr>
+
+    <form id="book-form" action="#">
+      <input type="text" id="btitle" name="btitle" placeholder="Title"><br><br />
+      <input type="text" id="author" name="author" placeholder="Author"><br><br>
+      <input type="submit" value="Add">
+    </form>
   </main>
 
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
   <script src="app.js"></script>
 </body>
 
