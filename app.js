@@ -16,16 +16,14 @@ class UI {
   static addBookToList(book) {
     const list = document.querySelector('#book-list')
 
-    const row = document.createElement('tr');
+    const row = document.createElement('p');
 
     row.innerHTML = `
-      <td>${book.title}</td>
-      <td>${book.author}</td>
-<<<<<<< HEAD
-=======
-      <td>${book.isbn}</td>
->>>>>>> d49cb6c5b7911fa843f292e09a69dca799405b56
-      <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+      <p>${book.title}</p>
+      <p>${book.author}</p>
+      <p>${book.isbn}</p><br>
+      <button><a href="#" class="btn btn-sm delete">Remove</a></button>
+      <hr>
     `;
 
     list.appendChild(row);
@@ -47,7 +45,7 @@ class UI {
   class Store {
     static getBooks() {
       let books;
-      if(localStorage.getItem('books') === null) {
+      if(localStorage.getItem('books')) {
         books = [];
       } else {
         books = JSON.parse(localStorage.getItem('books'));
