@@ -4,6 +4,7 @@ class Book {
     this.title = title;
     this.author = author;
     this.isbn = isbn;
+    
   }
 }
 
@@ -85,7 +86,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   const title = document.querySelector('#btitle').value;
   const author = document.querySelector('#author').value;
   const isbn = document.querySelector('#isbn').value;
-
+  
   const book = new Book(title, author, isbn);
   UI.addBookToList(book);
 
