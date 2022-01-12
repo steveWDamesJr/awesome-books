@@ -4,7 +4,6 @@ class Book {
     this.title = title;
     this.author = author;
     this.isbn = isbn;
-    
   }
 }
 
@@ -20,12 +19,11 @@ class UI {
     const list = document.querySelector('#book-list');
 
     const row = document.createElement('p');
-
+    row.setAttribute('id', 'row');
     row.innerHTML = `
-      <p>${book.title}</p>
-      <p>${book.author}</p>
-      <p>${book.isbn}</p><br>
-      <button><a href="#" class="btn btn-sm delete">Remove</a></button>
+      <p>"${book.title}" by ${book.author}</p>
+      <p>${book.isbn}</p>
+      <button class="button"><a href="#" class="btn btn-sm delete">Remove</a></button>
       <hr>
     `;
 
@@ -86,7 +84,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
   const title = document.querySelector('#btitle').value;
   const author = document.querySelector('#author').value;
   const isbn = document.querySelector('#isbn').value;
-  
+
   const book = new Book(title, author, isbn);
   UI.addBookToList(book);
 

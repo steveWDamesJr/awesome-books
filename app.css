@@ -37,7 +37,52 @@ form {
   color: #000;
 }
 
+.new-book-hr {
+  width: 20%;
+  background-color: #000;
+  
+}
+
 .form-btn {
   align-self: flex-end;
   margin-right: 20%;
+  border: 3px solid;
+  box-shadow: 4px 4px 1px #000;
+  
+  background-color: #fff;
 }
+
+#book-list {
+  border: 3px solid #000;
+  padding: 10px;
+  line-height: 20px;
+  
+}
+
+.button {
+  border: 3px solid;
+  box-shadow: 4px 4px 1px #000;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 60%;
+}
+
+.button a {
+  font-family: cursive;
+  font-weight: bold;
+  
+}
+
+#row {
+  background-color: aqua;
+  display: flex;
+}
+
+p {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+
