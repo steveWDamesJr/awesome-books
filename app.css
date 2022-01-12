@@ -40,7 +40,6 @@ form {
 .new-book-hr {
   width: 20%;
   background-color: #000;
-  
 }
 
 .form-btn {
@@ -48,7 +47,6 @@ form {
   margin-right: 20%;
   border: 3px solid;
   box-shadow: 4px 4px 1px #000;
-  
   background-color: #fff;
 }
 
@@ -56,7 +54,6 @@ form {
   border: 3px solid #000;
   padding: 10px;
   line-height: 20px;
-  
 }
 
 .button {
@@ -64,25 +61,19 @@ form {
   box-shadow: 4px 4px 1px #000;
   background-color: #fff;
   position: absolute;
-  margin-left: 60%;
-}
-
-.button a {
-  font-family: cursive;
+  left: 80%;
   font-weight: bold;
-  
 }
 
 #row {
-  background-color: aqua;
   display: flex;
 }
 
 p {
-  font-family: cursive;
   font-weight: bold;
   font-size: 13px;
 }
 
-
-
+#row:nth-child(odd) {
+  background-color: #ddd;
+}

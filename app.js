@@ -18,13 +18,12 @@ class UI {
   static addBookToList(book) {
     const list = document.querySelector('#book-list');
 
-    const row = document.createElement('p');
+    const row = document.createElement('div');
     row.setAttribute('id', 'row');
     row.innerHTML = `
-      <p>"${book.title}" by ${book.author}</p>
-      <p>${book.isbn}</p>
-      <button class="button"><a href="#" class="btn btn-sm delete">Remove</a></button>
-      <hr>
+      <p class="row-btn">${book.title} by ${book.author}</p>
+      <p class="row-btn">${book.isbn}</p>
+      <input class ="button delete" type="submit" value="Remove">
     `;
 
     list.appendChild(row);
@@ -32,7 +31,7 @@ class UI {
 
   static deleteBook(el) {
     if (el.classList.contains('delete')) {
-      el.parentElement.parentElement.remove();
+      el.parentElement.remove();
     }
   }
 
@@ -96,5 +95,5 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
 
-  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+  Store.removeBook(e.target.previousElementSibling.textContent);
 });
