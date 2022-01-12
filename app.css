@@ -28,13 +28,16 @@ form {
 }
 
 .form-inputs {
-  width: 60%;
+  width: 50%;
   border: 3px solid #000;
+  line-height: 30px;
 }
 
 ::placeholder {
   font-weight: bold;
   color: #000;
+  padding-left: 0.3rem;
+  font-size: 13px;
 }
 
 .new-book-hr {
@@ -44,7 +47,7 @@ form {
 
 .form-btn {
   align-self: flex-end;
-  margin-right: 20%;
+  margin-right: 25%;
   border: 3px solid;
   box-shadow: 4px 4px 1px #000;
   background-color: #fff;
@@ -52,8 +55,11 @@ form {
 
 #book-list {
   border: 3px solid #000;
-  padding: 10px;
   line-height: 20px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 94vw;
 }
 
 .button {
@@ -63,6 +69,8 @@ form {
   position: absolute;
   left: 80%;
   font-weight: bold;
+  margin-bottom: 0.4%;
+  margin-top: 0.4%;
 }
 
 #row {
@@ -72,6 +80,13 @@ form {
 p {
   font-weight: bold;
   font-size: 13px;
+}
+
+.row-btn {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  padding-left: 0.3rem;
+  line-height: 30px;
 }
 
 #row:nth-child(odd) {
