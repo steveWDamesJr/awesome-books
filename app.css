@@ -7,6 +7,19 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+}
+
+nav {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #000;
+  margin-top: 0.4rem;
+  position: sticky;
+}
+
 .title {
   text-align: center;
   font-weight: bold;

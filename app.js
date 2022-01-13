@@ -7,6 +7,9 @@ class Book {
   }
 }
 
+var dt = new Date();
+document.getElementById("date-time").innerHTML = dt;
+
 class UI {
   static displayBooks() {
     // eslint-disable-next-line no-use-before-define
