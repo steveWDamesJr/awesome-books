@@ -8,9 +8,9 @@
 Additional description about the project and its features.
 
 # Screenshots
-![DESKTOP VIEW]()
-![MOBILE VIEW]()
-![DROP DOWN MENU MOBILE VIEW]()
+![DESKTOP VIEW](./images/awesome-books.png)
+![MOBILE VIEW](./images/awesome-books-mobile.png)
+![DROP DOWN MENU MOBILE VIEW](./images/awesome-books-drop-down.png)
 
 
 ## Built With
@@ -20,7 +20,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://stevewdamesjr.github.io/awesome-books/)
 
 
 ## Getting Started

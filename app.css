@@ -5,11 +5,43 @@
   font-family: "Yanone Kaffeesatz", sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+nav {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #000;
+  margin-top: 0.4rem;
+  position: sticky;
+  font-weight: bold;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-item {
+  border-right: 1px solid lightgray;
+  font-weight: bold;
+}
+
+/* This is the important piece */
+.nav-item:last-of-type {
+  border-right: none;
 }
 
 .title {
   text-align: center;
   font-weight: bold;
+  display: none;
 }
 
 #isbn {
@@ -53,6 +85,12 @@ form {
   background-color: #fff;
 }
 
+.list-head {
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}
+
 #book-list {
   border: 3px solid #000;
   line-height: 20px;
@@ -60,17 +98,16 @@ form {
   margin-left: auto;
   margin-right: auto;
   width: 94vw;
+  display: none;
 }
 
 .button {
   border: 3px solid;
   box-shadow: 4px 4px 1px #000;
   background-color: #fff;
-  position: absolute;
   left: 80%;
   font-weight: bold;
-  margin-bottom: 0.4%;
-  margin-top: 0.4%;
+  margin: 0.4% 0.5rem 0.4% auto;
 }
 
 #row {
@@ -91,4 +128,39 @@ p {
 
 #row:nth-child(odd) {
   background-color: #ddd;
+}
+
+.copyright {
+  position: fixed;
+  border: 3px solid #000;
+  font-weight: bold;
+}
+
+.copyright p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-info {
+  font-weight: bold;
+  display: none;
+}
+
+.contact-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-head {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+footer {
+  margin-top: 28rem;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
 }
