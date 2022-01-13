@@ -5,6 +5,8 @@
   font-family: "Yanone Kaffeesatz", sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 nav {
@@ -14,6 +16,26 @@ nav {
   border: 3px solid #000;
   margin-top: 0.4rem;
   position: sticky;
+  font-weight: bold;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-item {
+  border-right: 1px solid lightgray;
+  font-weight: bold;
+}
+
+/* This is the important piece */
+.nav-item:last-of-type {
+  border-right: none;
 }
 
 .title {
@@ -65,7 +87,6 @@ form {
 
 .list-head {
   text-align: center;
-  font-family: cursive;
   font-weight: bold;
   display: none;
 }
@@ -112,6 +133,12 @@ p {
 .copyright {
   position: fixed;
   border: 3px solid #000;
+  font-weight: bold;
+}
+
+.copyright p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .contact-info {
@@ -119,7 +146,21 @@ p {
   display: none;
 }
 
+.contact-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #contact-head {
   font-weight: bold;
   text-align: center;
+  padding-bottom: 3rem;
+}
+
+footer {
+  margin-top: 28rem;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
 }
