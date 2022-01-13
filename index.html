@@ -24,13 +24,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">List <span class="sr-only">(current)</span></a>
+          <a class="nav-link" id="List" href="#">List <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Add new</a>
+          <a class="nav-link" id="add-new" href="#">Add new</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" id="contact" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -41,12 +41,13 @@
     <h1 class="title"><strong>All awesome books</strong></h1>
   </header>
   <main>
+    <h2 class="list-head">Add awesome books</h2>
 <div id="book-list">
   
 
 </div>
-<hr class="new-book-hr">
-<h2 class="add-book-title">Add a new book</h2>
+
+<h3 class="add-book-title">Add a new book</h3>
     
     <form id="book-form" action="#">
       <input class="form-inputs" type="text" id="btitle" name="btitle" placeholder="Title"><br>
@@ -55,11 +56,20 @@
       <input type="text" id="isbn" name="isbn" placeholder="Isbn">
     </form>
   </main>
-
+<div class="contact-info">
+  <h4 id="contact-head">Contact infomation</h4>
+  <p class="text-center">Do have any question or you just want to say "Hello"?<br>
+  You can reach out to us!</p>
+  <ul>
+    <li>Our e-mail: mail@mail.com</li>
+    <li>Our phone number: 0043586534422</li>
+    <li>Our address: Streetname 22, 84503 City, Country</li>
+  </ul>
+</div>
   
 
   <footer class="page-footer pt-4 fixed-footer">
-    <div class="navbar navbar-fixed-bottom container-fluid text-center text-md-left footer-copyright py-3">Copyright © 2022 Verissimo & Steve 
+    <div class="copyright navbar navbar-fixed-bottom container-fluid text-center text-md-left footer-copyright py-3">Copyright © 2022 Verissimo & Steve 
     </div>
   </footer>
 

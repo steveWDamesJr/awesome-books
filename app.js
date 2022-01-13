@@ -7,8 +7,8 @@ class Book {
   }
 }
 
-var dt = new Date();
-document.getElementById("date-time").innerHTML = dt;
+const dt = new Date();
+document.getElementById('date-time').innerHTML = dt;
 
 class UI {
   static displayBooks() {
@@ -99,4 +99,46 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
 
   Store.removeBook(e.target.previousElementSibling.textContent);
+});
+
+const bookList = document.querySelector('#book-list');
+const listHead = document.querySelector('.list-head');
+const bookForm = document.querySelector('#book-form');
+const addBookTitle = document.querySelector('.add-book-title');
+const contactInfo = document.querySelector('.contact-info');
+
+function Toogle() {
+  bookList.style.display = 'block';
+  bookForm.style.display = 'none';
+  addBookTitle.style.display = 'none';
+  listHead.style.display = 'block';
+  contactInfo.style.display = 'none';
+}
+
+document.querySelector('#List').addEventListener('click', () => {
+  Toogle();
+});
+
+function addToogle() {
+  bookList.style.display = 'none';
+  bookForm.style.display = 'flex';
+  addBookTitle.style.display = 'block';
+  listHead.style.display = 'none';
+  contactInfo.style.display = 'none';
+}
+
+document.querySelector('#add-new').addEventListener('click', () => {
+  addToogle();
+});
+
+function contactToogle() {
+  bookList.style.display = 'none';
+  bookForm.style.display = 'none';
+  addBookTitle.style.display = 'none';
+  contactInfo.style.display = 'block';
+  listHead.style.display = 'none';
+}
+
+document.querySelector('#contact').addEventListener('click', () => {
+  contactToogle();
 });

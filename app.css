@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-body {
-  height: 100vh;
-}
-
 nav {
   width: 94%;
   margin-left: auto;
@@ -23,6 +19,7 @@ nav {
 .title {
   text-align: center;
   font-weight: bold;
+  display: none;
 }
 
 #isbn {
@@ -66,6 +63,13 @@ form {
   background-color: #fff;
 }
 
+.list-head {
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  display: none;
+}
+
 #book-list {
   border: 3px solid #000;
   line-height: 20px;
@@ -73,6 +77,7 @@ form {
   margin-left: auto;
   margin-right: auto;
   width: 94vw;
+  display: none;
 }
 
 .button {
@@ -102,4 +107,19 @@ p {
 
 #row:nth-child(odd) {
   background-color: #ddd;
+}
+
+.copyright {
+  position: fixed;
+  border: 3px solid #000;
+}
+
+.contact-info {
+  font-weight: bold;
+  display: none;
+}
+
+#contact-head {
+  font-weight: bold;
+  text-align: center;
 }
