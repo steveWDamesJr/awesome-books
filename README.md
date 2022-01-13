@@ -8,9 +8,9 @@
 Additional description about the project and its features.
 
 # Screenshots
-![DESKTOP VIEW]()
-![MOBILE VIEW]()
-![DROP DOWN MENU MOBILE VIEW]()
+![DESKTOP VIEW](./images/awesome-books.png)
+![MOBILE VIEW](./images/awesome-books-mobile.png)
+![DROP DOWN MENU MOBILE VIEW](./images/awesome-books-drop-down.png)
 
 
 ## Built With
