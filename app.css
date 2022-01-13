@@ -66,11 +66,9 @@ form {
   border: 3px solid;
   box-shadow: 4px 4px 1px #000;
   background-color: #fff;
-  position: absolute;
   left: 80%;
   font-weight: bold;
-  margin-bottom: 0.4%;
-  margin-top: 0.4%;
+  margin: 0.4% 0.5rem 0.4% auto;
 }
 
 #row {
